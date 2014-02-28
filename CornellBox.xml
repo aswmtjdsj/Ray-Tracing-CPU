@@ -1,0 +1,143 @@
+<Scene>
+  <Scene_Name> Cornell Box </Scene_Name>
+  <BackGround_Color> 0 0 0 </BackGround_Color>
+  <View_Plane>
+    <Horizontal_Resolution> 600 </Horizontal_Resolution>
+    <Vertical_Resolution> 600 </Vertical_Resolution>
+    <gamma> 1.0 </gamma>
+    <Pixel_Size> 1.0 </Pixel_Size>
+    <Sampler>
+      <Sampler_Class> MultiJittered </Sampler_Class>
+      <Number_Of_Samples> 4 </Number_Of_Samples>
+      <Number_Of_Sets> 79 </Number_Of_Sets>
+    </Sampler>
+  </View_Plane>
+  <Camera>
+  </Camera>
+  <Object_List>
+    <Object_0>
+      <Object_Name> Sphere_0 </Object_Name>
+      <Center> -50 50 -150 </Center>
+      <Radius> 50 </Radius>
+      <Material>
+        <Material_Class> Phong </Material_Class>
+        <Material_Param>
+          <ka> 0.25 </ka>
+          <kd> 0.65 </kd>
+          <ks> 0.2 </ks>
+          <exp> 10 </exp>
+          <cd> 1, 1, 1 </cd>
+          <cs> 1, 1, 1 </cs>
+        </Material_Param>
+      </Material>
+    </Object_0>
+    <Object_1>
+      <Object_Name> Polyhedron_0 </Object_Name>
+      <Point_Buffer> 50 0 -150, 74 0 -132, 68 0 -174, 92 0 -156, 50 100 -150, 74 100 -132, 68 100 -174, 92 100 -156, </Point_Buffer>
+      <Index_Buffer> 0 1 3 2, 0 2 6 4, 0 1 5 4, 1 3 7 5, 2 3 7 6, 4 5 7 6, </Index_Buffer>
+      <Material>
+        <Material_Class> Phong </Material_Class>
+        <Material_Param>
+          <ka> 0.25 </ka>
+          <kd> 0.65 </kd>
+          <ks> 0.2 </ks>
+          <exp> 10 </exp>
+          <cd> 0, 1, 1 </cd>
+          <cs> 0, 1, 1 </cs>
+        </Material_Param>
+      </Material>
+    </Object_1>
+    <Object_2>
+      <Object_Name> Plane_Bottom </Object_Name>
+      <Fixed_Point> 0 0 0 </Fixed_Point>
+      <Normal> 0 1 0 </Normal>
+      <Material>
+        <Material_Class> Phong </Material_Class>
+        <Material_Param>
+          <ka> 0.25 </ka>
+          <kd> 0.65 </kd>
+          <ks> 0.2 </ks>
+          <exp> 20 </exp>
+          <cd> 1, 1, 1 </cd>
+          <cs> 1, 1, 1 </cs>
+        </Material_Param>
+      </Material>
+    </Object_2>
+    <Object_3>
+      <Object_Name> Plane_Left </Object_Name>
+      <Fixed_Point> -150 0 0 </Fixed_Point>
+      <Normal> 1 0 0 </Normal>
+      <Material>
+        <Material_Class> Phong </Material_Class>
+        <Material_Param>
+          <ka> 0.25 </ka>
+          <kd> 0.65 </kd>
+          <ks> 0.2 </ks>
+          <exp> 20 </exp>
+          <cd> 1, 0, 0 </cd>
+          <cs> 1, 0, 0 </cs>
+        </Material_Param>
+      </Material>
+    </Object_3>
+    <Object_4>
+      <Object_Name> Plane_Right </Object_Name>
+      <Fixed_Point> 150 0 0 </Fixed_Point>
+      <Normal> -1 0 0 </Normal>
+      <Material>
+        <Material_Class> Phong </Material_Class>
+        <Material_Param>
+          <ka> 0.25 </ka>
+          <kd> 0.65 </kd>
+          <ks> 0.2 </ks>
+          <exp> 20 </exp>
+          <cd> 0, 1, 0 </cd>
+          <cs> 0, 1, 0 </cs>
+        </Material_Param>
+      </Material>
+    </Object_4>
+    <Object_5>
+      <Object_Name> Plane_Top </Object_Name>
+      <Fixed_Point> 0 300 0 </Fixed_Point>
+      <Normal> 0 -1 0 </Normal>
+      <Material>
+        <Material_Class> Phong </Material_Class>
+        <Material_Param>
+          <ka> 0.25 </ka>
+          <kd> 0.65 </kd>
+          <ks> 0.2 </ks>
+          <exp> 20 </exp>
+          <cd> 1, 1, 1 </cd>
+          <cs> 1, 1, 1 </cs>
+        </Material_Param>
+      </Material>
+    </Object_5>
+    <Object_6>
+      <Object_Name> Plane_Back </Object_Name>
+      <Fixed_Point> 0 0 -300 </Fixed_Point>
+      <Normal> 0 0 1 </Normal>
+      <Material>
+        <Material_Class> Phong </Material_Class>
+        <Material_Param>
+          <ka> 0.25 </ka>
+          <kd> 0.65 </kd>
+          <ks> 0.2 </ks>
+          <exp> 20 </exp>
+          <cd> 1, 1, 1 </cd>
+          <cs> 1, 1, 1 </cs>
+        </Material_Param>
+      </Material>
+    </Object_6>
+  </Object_List>
+  <Light_List>
+    <Light_0>
+      <Light_Class> PointLight </Light_Class>
+      <Light_Param>
+        <location> 0 299 -150 </location>
+        <Radiance> 3.0 </Radiance>
+        <Coeff> 0.00005 </Coeff>
+        <color> 1 1 1 </color>
+        <Has_Global_Illumination> 1 </Has_Global_Illumination>
+      </Light_Param>
+    </Light_0>
+  </Light_List>
+</Scene>

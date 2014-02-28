@@ -1,0 +1,26 @@
+﻿
+about static member
+1.初始化static成员变量不能安排在类的构造函数中，因为构造函数可能一再被调用，而变量的初值却只应该设定一次。也不要把初始化安排在头文件中，因为它可能会被包含在许多地方。而应该放在main函数之中，或全域函数中，或者任何函数之外。
+2.静态成员变量(函数)在类外定义时，注意不要写static，初始化时候 [类型名] [类名]::[变量名] 例如：int Base::a。
+3.当静态成员变量被声明为private类型时，不能用类名::变量名 为静态成员变量赋值。
+当声明为public 则可以。
+4.当用类名调用静态成员函数时，调用符号是::，而不是java里的.号，也不是指针的->号
+
+camera还没上
+//pinhole
+stereo
+
+//sample
+//anti-alias
+
+//RayTracing---->RayCasting
+//substitute Tracer
+
+friend member function
+defined inside class cannot be recognized by clang compiler? why?
+
+on mac-osx, should export dyld path before running main
+
+on mac, we cannot non-block show window (cannot update window in some
+		thread)...
+we should change it back in windows
