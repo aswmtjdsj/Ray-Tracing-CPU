@@ -3,7 +3,7 @@
 #include "World.h"
 #include "Sampler.h"
 
-PinHole::PinHole():zoom(RT_ONE), Camera() {
+PinHole::PinHole(): Camera(), zoom(RT_ONE) {
 }
 
 PinHole::PinHole(const Point &_eye, const Point &l_a, const Vector &_up, /*const RTdouble &exp_t,*/

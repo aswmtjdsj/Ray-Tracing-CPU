@@ -1,7 +1,7 @@
 #include "Camera.h"
 #include "Constants.h"
 
-Camera::Camera(): exposureTime(RT_ONE), up(Vector(RT_ZERO, RT_ONE, RT_ZERO)) {
+Camera::Camera(): up(Vector(RT_ZERO, RT_ONE, RT_ZERO)), exposureTime(RT_ONE) {
 }
 
 Camera::Camera(const Point &_eye, const Point &l_a, const Vector &_up/*, const RTdouble &exp_t = 1.0*/):

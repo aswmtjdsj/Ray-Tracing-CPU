@@ -13,6 +13,7 @@
 #include <ctime>
 #include <string>
 #include <cassert>
+#include <cerrno>
 
 #include <fstream>
 

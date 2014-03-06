@@ -8,8 +8,8 @@
 
 #include "World.h"
 
-AmbientOccluder::AmbientOccluder(): sampler_ptr(NULL), 
-	color(COLOR_WHITE),
+AmbientOccluder::AmbientOccluder(): color(COLOR_WHITE),
+    sampler_ptr(NULL), 
 	minAmount(COLOR_BLACK){
 }
 

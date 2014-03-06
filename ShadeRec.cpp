@@ -7,8 +7,8 @@ ShadeRec::ShadeRec(World &wr)
 	hit_point(), local_hit_point(), normal(),
 	//color(COLOR_BLACK),
 	ray(), depth(0), dir(),
-	t(RT_INFINITY),
-	w(wr){
+	w(wr),
+	t(RT_INFINITY){
 
 }
 
@@ -19,8 +19,8 @@ ShadeRec::ShadeRec(const ShadeRec &sr):
 	normal(sr.normal),
 	ray(sr.ray), depth(sr.depth), dir(sr.dir),
 	//color(sr.color),
-	t(RT_INFINITY), // i don't know
-	w(sr.w) {
+	w(sr.w),
+	t(RT_INFINITY){ // i don't know
 }
 
 ShadeRec::~ShadeRec() {
