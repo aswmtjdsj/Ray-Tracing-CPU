@@ -1,6 +1,8 @@
 CPP=g++
 
-CFLAGS=-g -Wall -std=c++0x
+DEBUG_LEVEL=-DEBUG_INFO
+
+CFLAGS=-g -Wall -std=c++0x $(DEBUG_INFO)
 
 CC=$(CPP) $(CFLAGS)
 
