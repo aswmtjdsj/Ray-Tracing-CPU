@@ -8,6 +8,9 @@ Sampler::Sampler(): numSamples(1), numSets(1), count(0), jump(0) {
 Sampler::Sampler(const int &n): numSamples(n), numSets(1), count(0), jump(0) {
 }
 
+Sampler::~Sampler() {
+}
+
 Point2D Sampler::sampleUnitSquare() {
 	if( count % numSamples == 0) { // every time a new Sampler selected
 		jump = (Random::rand_int() % numSets) * numSamples;
@@ -150,6 +153,9 @@ Jittered::Jittered(): Sampler() {
 Jittered::Jittered(const int &n): Sampler(n) {
 }
 
+Jittered::~Jittered() {
+}
+
 void Jittered::generateSamples() {
 	int n = (int) sqrt(numSamples);
 	for(int p = 0; p < numSets; p++) {
@@ -166,6 +172,9 @@ Regular::Regular(): Sampler() {
 }
 
 Regular::Regular(const int &n): Sampler(n) {
+}
+
+Regular::~Regular() {
 }
 
 void Regular::generateSamples() {
@@ -189,6 +198,9 @@ NRooks::NRooks(): Sampler() {
 NRooks::NRooks(const int &n): Sampler(n) {
 }
 
+NRooks::~NRooks() {
+}
+
 void NRooks::generateSamples() {
 	for(int p = 0; p < numSets; p++) {
 		for(int j = 0; j < numSamples; j++) { // along the diagonal
@@ -207,6 +219,9 @@ MultiJittered::MultiJittered(): Sampler() {
 }
 
 MultiJittered::MultiJittered(const int &n): Sampler(n) {
+}
+
+MultiJittered::~MultiJittered() {
 }
 
 void MultiJittered::generateSamples() {

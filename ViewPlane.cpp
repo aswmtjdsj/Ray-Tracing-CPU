@@ -1,7 +1,7 @@
 #include "ViewPlane.h"
 #include "Sampler.h"
 
-ViewPlane::ViewPlane() {
+ViewPlane::ViewPlane() : sampler_ptr(NULL) {
 }
 
 ViewPlane::ViewPlane(const ViewPlane &vp):

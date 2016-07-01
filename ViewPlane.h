@@ -35,4 +35,4 @@ public:
 	void setSamples(const int &);
 };
 
-#endif 
+#endif

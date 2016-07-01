@@ -1,7 +1,7 @@
 #ifndef DRAWING_H
 #define DRAWING_H
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 #undef main // prohibiting the additional behaviors in the header files
 
@@ -30,10 +30,10 @@ public:
 	//Function of Maintaing the Ray Tracing Thread
 	void nonBlockingRayTracing();
 
-	//Function of Maintaing the "REAL" Ray Tracing Thread 
+	//Function of Maintaing the "REAL" Ray Tracing Thread
 	void nonBlockRayTracingWorld(World *);
 
-	//Thread function to Show Window 
+	//Thread function to Show Window
 	static int showWindowThread(void * data);
 
 	//Function used to run another thread which is used to show window
@@ -50,7 +50,7 @@ public:
 	void setPixel(const int &, const int &, const Uint32 &);
 	Uint32 getPixel(const int &, const int &);
 
-	// set refresh 
+	// set refresh
 	void setRefresh(const bool &);
 
 	//Frees media and shuts down SDL
